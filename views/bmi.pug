@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  div(class="header")
+   div(class="wrapper")
+    form(action="/form",method='POST')
+     h1 BMI calculator
+     p Insert Your Age
+     input(type="text" name="age")
+     p Insert Weight in Kg
+     input(type="text" name="weight")
+     br
+     p Insert Height in cm
+     input(type="text" name="height")
+     br
+     button(id="calc") check
+     p(id="result") 
+     h2 Your BMI Result is: #{result}
